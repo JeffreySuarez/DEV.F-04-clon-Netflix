@@ -1,0 +1,465 @@
+/* ************************ START FONTS *************************** */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700;800;900&family=Playfair+Display:wght@400;500;700;900&family=Roboto:wght@300;500;900&display=swap");
+
+.fonts {
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: "Netflix Sans 1";
+  src: url("./assets/fonts/NetflixSans-Regular.otf");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Netflix Sans 2";
+  src: url("./assets/fonts/NetflixSans-Medium.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Netflix Sans 3";
+  src: url("./assets/fonts/NetflixSans-Light.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Netflix Sans 4";
+  src: url("./assets/fonts/NetflixSans-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* ************************* END FONTS ***************************** */
+
+/* ************************* START RESET ***************************** */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Netflix Sans"; */
+  /* font-family: "Bebas Neue", sans-serif; */
+}
+
+/* ************************* END RESET ***************************** */
+
+body {
+  width: 100%;
+}
+
+/* **************************** START MAIN HEADER ******************* */
+/* style for navbar */
+
+.main-header {
+  width: 100%;
+  /* height: 68px; */
+  padding: 0 4%;
+  /* background-color: #141414; */
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  /* height: auto; */
+  z-index: 99;
+  min-height: 70px;
+}
+
+.header-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-left .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.header-left .logo img {
+  width: 92.5px;
+}
+.header-left .primary-navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  line-height: 0.9rem;
+  padding-inline-start: 1rem;
+  margin-block-end: 1em;
+  margin-block-start: 1em;
+}
+
+/* style navigation menu */
+
+.header-left .primary-navigation .navigation-menu-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 1.15rem;
+}
+.header-left .primary-navigation .navigation-menu-active a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 0.9rem;
+  line-height: 0.75rem;
+}
+
+.header-left .primary-navigation .navigation-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 1.15rem;
+}
+.header-left .primary-navigation .navigation-menu a {
+  text-decoration: none;
+  color: #e5e5e5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 0.75rem;
+}
+
+/* style end menu */
+
+.header-right {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: 3%;
+  top: 0;
+  width: 14.8%;
+  min-height: 70px;
+}
+
+.header-right .secondary-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .secondary-navigation .nav-element {
+  margin-right: 10px;
+}
+
+.header-right .secondary-navigation .nav-element .searchBox {
+  padding: 1px 6px;
+  display: flex;
+  align-items: center;
+}
+
+.header-right .secondary-navigation .nav-element .searchBox svg {
+  color: rgb(255, 255, 255);
+}
+
+/* style for notification */
+
+.header-right .secondary-navigation .nav-element .notificationBox {
+  position: relative;
+}
+
+.header-right .secondary-navigation .nav-element .searchBox .notification {
+  font-size: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  position: absolute;
+  right: -0.3em;
+  width: 12px;
+  height: 12px;
+  top: -0.2em;
+  padding: 2.2px;
+  z-index: 2;
+  background-color: #b9090b;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-right .secondary-navigation .nav-element .searchBox .yellow img {
+  border-radius: 4px;
+}
+.header-right .secondary-navigation .nav-element .yellowBox {
+  padding: 0;
+}
+
+.header-right .secondary-navigation .nav-element .yellowBox .yellow {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .secondary-navigation .nav-element .yellowBox .caret {
+  border-color: #ffffff transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  height: 0;
+  margin-left: 10px;
+}
+
+/* ************************* END MAIN HEADER ***************************** */
+
+/* ************************ START BACKGROUND IMAGE *********************** */
+
+/* styles for image background */
+
+.main-content {
+  width: 100%;
+  position: relative;
+  top: 0;
+  z-index: -1;
+}
+
+.main-content img {
+  overflow-clip-margin: content-box;
+  width: 100%;
+}
+
+/* styles background gradient for image */
+
+.main-content .trailer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(77deg, rgba(0, 0, 0, 0.6), transparent 85%);
+  position: absolute;
+  top: 0;
+  right: 26.09%;
+  z-index: 1;
+}
+
+.main-content .vignete {
+  width: 100%;
+  height: 14.7vw;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(180deg, hsla(0, 0%, 8%, 0) 0, hsla(0, 0%, 8%, 0.15) 15%, hsla(0, 0%, 8%, 0.35) 29%, hsla(0, 0%, 8%, 0.58) 44%, #141414 68%, #141414);
+}
+
+.main-content .info-main-content {
+  width: 36%;
+  left: 4%;
+  bottom: 35%;
+  position: absolute;
+  top: 70px;
+  z-index: 10;
+}
+
+.main-content .info-main-content .logo-text {
+  margin-bottom: 12px;
+}
+.main-content .info-main-content .info-wrapper {
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin: 1vw 0;
+}
+
+.main-content .info-main-content .info-wrapper .content-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.main-content .info-main-content .info-wrapper svg {
+  height: 1.57em;
+  margin-right: 0.5em;
+}
+
+.main-content .info-main-content .info-resume {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+}
+
+.main-content .info-main-content .info-buttom {
+  display: flex;
+  align-items: center;
+  margin-top: 0.92rem;
+  width: 100%;
+  height: 50px;
+}
+
+/* stiles buttom-play */
+
+.main-content .info-main-content .info-buttom .buttom-play {
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0.42rem 1.17rem 0.42rem 0.8rem;
+  border-radius: 4px;
+  width: 9.4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  background-color: #ffffff;
+}
+
+.main-content .info-main-content .info-buttom .buttom-play:hover {
+  background-color: #ffffffd2;
+}
+
+.main-content .info-main-content .info-buttom .buttom-play .contain-buttom-play svg {
+  width: 20px;
+  height: 20px;
+}
+.main-content .info-main-content .info-buttom .buttom-play .contain-buttom-play {
+  display: flex;
+  align-items: center;
+}
+
+.main-content .info-main-content .info-buttom .buttom-play span {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* style buttom info */
+
+.main-content .info-main-content .info-buttom .buttom-info {
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0.42rem 1.17rem 0.42rem 0.8rem;
+  border-radius: 4px;
+  width: 12rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5c5854ca;
+  border: none;
+}
+
+.main-content .info-main-content .info-buttom .buttom-info:hover {
+  background-color: #ffffff47;
+}
+
+.main-content .info-main-content .info-buttom .buttom-info .contain-buttom-info svg {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+.main-content .info-main-content .info-buttom .buttom-info .contain-buttom-info {
+  display: flex;
+  align-items: center;
+}
+
+.main-content .info-main-content .info-buttom .buttom-info span {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+.main-content .age {
+  position: absolute;
+  bottom: 35%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.age .action-age {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 0.1rem;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-right: 1rem;
+}
+
+.age .action-age:hover {
+  background-color: #ffffff21;
+  cursor: pointer;
+}
+
+.age .action-age .action-age-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.age .action-age .action-age-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.age .rating {
+  display: flex;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.282);
+  border-left-style: solid;
+  box-sizing: border-box;
+  border-left: 3px solid #dcdcdc;
+  padding: 0.5rem 3.14rem 0.5rem 0.75rem;
+}
+
+.age .rating .rating-number {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+/* ************************ END BACKGROUND IMAGE *********************** */
+
+/* ************************ START SECTION IMAGES *********************** */
+
+/* .section {
+  width: 100%;
+  display: flex;
+  z-index: 99;
+  position: absolute;
+  bottom: -5%;
+} */
+
+.section {
+  width: 100%;
+  position: absolute;
+  bottom: -20%;
+  z-index: 11;
+}
+
+.section-slider-primary {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  color: white;
+}
+
+.card-image {
+  display: flex;
+  color: white;
+}
+
+.section-slider-primary .card-primary img {
+  width: 14.5em;
+}
+
+.section-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #141414;
+}
+
+.section-slider .card img {
+  width: 14.5em;
+}
